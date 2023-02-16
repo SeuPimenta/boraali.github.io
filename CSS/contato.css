@@ -1,0 +1,158 @@
+
+
+:root {
+    --color-primary: #d40606;
+    --color-secundary: #970303;
+    --color-primary-light: #fdf1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+/*******************
+*     CONTATO      *
+*******************/
+
+.appointment {
+    padding: 100px 60px;
+    background-color: var(--color-primary-light);
+    min-height: 100vh;
+    background-image: url(../Images/logos/tab.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 200px;
+}
+
+.appointment h2 {
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.appointment img {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment .personal-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primary-light);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.appointment .personal-data select:invalid {
+    border:1px solid red;
+}
+
+
+.appointment textarea {
+    height: 100px;
+}
+
+.appointment button {
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+/******************
+*     FOOTER      *
+******************/
+
+.footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 1080px) {
+    .appointment {
+        padding: 50px 30px;
+        background-position: right bottom;
+        background-size: 120px;
+    }
+
+    .appointment h2 {
+        font-size: 30px;
+    }
+
+    .appointment .personal-data {
+        flex-wrap: wrap;
+    }
+
+    .appointment .input-wrapper {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .appointment .input-wrapper:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .appointment button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

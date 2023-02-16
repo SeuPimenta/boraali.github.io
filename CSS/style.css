@@ -1,0 +1,108 @@
+
+@import "about.css";
+@import "contato.css";
+@import "galeria.css";
+@import "localizacao.css";
+@import "services.css";
+@import "menu.css";
+
+
+:root {
+    --color-primary: #d40606;
+    --color-secundary: #970303;
+    --color-primary-light: #fdf1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*****************
+* HOME - BANNER  *
+*****************/
+
+.home .banner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    height: 270px;
+    width: 100%;
+    max-width: 770px;
+    margin-left: -385px;
+    margin-top: -75px;
+    color: white;
+    text-align: center;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.home .banner h1 {
+    font-size: 9em;
+}
+
+.home .banner .slogan1 {
+    margin-bottom: 10px;
+}
+
+.home .banner .slogan2 {
+    color: var(--color-primary);
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home .banner .logo-slogan {
+    width: 20px;
+    margin-top: 15px;
+}
+
+
+
+
+/******************
+*     FOOTER      *
+******************/
+
+.footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .home .banner h1 {
+        font-size: 3em;
+        padding: 0 20px;
+        text-align: center;
+    }
+}

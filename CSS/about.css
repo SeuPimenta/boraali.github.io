@@ -1,0 +1,195 @@
+
+
+:root {
+    --color-primary: #d40606;
+    --color-secundary: #970303;
+    --color-primary-light: #fdf1f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+
+/*****************
+*     ABOUT      *
+*****************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    position: relative;
+    top: -50px;
+    width: 33%;
+    padding: 20px;
+    background-image: url(../Images/body/city.jpg);
+    /*background: white; depois mudar a cor preta ara uma imagem e apagar esta regra*/
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .timing .logo-horario {
+    width: 50px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .timing .text {
+    margin: 10px 0;
+}
+
+.about .timing .text:after {
+    content: '•';
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|';
+}
+
+.about .timing .text h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .timing span {
+    color: white;
+    font-size: 15px;
+    display: block;
+    padding: 5px 30px;
+}
+
+.about .timing .alfinete {
+    width: 25px;
+}
+
+.about .timing .telefone {
+    width: 25px;
+}
+
+
+
+
+/*******************
+*ABOUT - EXPERIENCE*
+*******************/
+
+.about .experience {
+    width: 66%;
+    color: rgb(0, 0, 0);
+    margin-left: 7%;
+    margin-top: 100PX;
+}
+
+.about .experience h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    color: black;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.about .experience .text .img-about {
+    width: 20%;
+    margin: 0 10px;
+    padding-top: 350px;
+}
+
+.about .experience span {
+    margin: 20px;
+}
+
+
+
+/******************
+*     FOOTER      *
+******************/
+
+.footer {
+    background-color: #202020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 1080px) {
+    .about .timing {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+
+
+@media only screen and (max-width: 1080px) {
+    .about .experience {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 50px;
+    }
+    
+    .about .experience .text .img-about {
+      width: 100px;
+      margin: 0 20px;
+    }
+  }
+  
